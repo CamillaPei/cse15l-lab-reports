@@ -40,6 +40,7 @@ using ```/add-message```
 
 Screenshot 1
 ![SCREENSHOT1](labreport2screenshot1)
+
 Screenshot 2 
 ![SCREENSHOT2](labreport2screenshot2.jpg)
 
@@ -50,9 +51,7 @@ run ```ls``` with the absolute path to the private key for SSH key for logging i
 run ```ls``` with the absolute path to the public key for SSH key for logging into ```ieng6```
 ![PUBLIC](labreport2publickey.jpg)
 
-## Part 3 
-
-
 log into ```ieng6``` without being asked for a password
 ![NOPASSWORD](labreport2nopassword.jpg)
 
+## Part 3 
