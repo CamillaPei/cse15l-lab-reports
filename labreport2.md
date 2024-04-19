@@ -47,14 +47,14 @@ Methods called, relevate arguments and relevant fields of the class, and how do 
 3. Method: ```getPath()```. Parameter: url. Argument: none.
 4. Method: ```equals()```. Parameter: Object. Argument: ```"/add-message"```.
 5. Method: ```startWith()```. Parameter: String. Argument: ```"s="```. 
-6. Method: ```split()```. Parameter: String. Arugment: ```"="```, ```"="```. 
+6. Method: ```split()```. Parameter: String. Arugment: ```"="```, ```"&"```, ```"="```.
 7. Method: ```Stringformat()```. Parameter: String. Argument ```"%s\n", result```.
-8. Field: ```String query``` = http://localhost:4009/add-message?s=Hello&user=jpolitz
-9. Field: ```String parts``` = ```Hello&user=jpolitz```
-10. Field: ```String message``` = ```Hello```
-11. Field: ```String user``` = ```jpolitz```
-13. Field: ```String old``` = ```jpolitz: Hello```
-14. Class field: ```String result``` = ```jpolitz: Hello```. 
+8. Field: ```String query```. Value = http://localhost:4009/add-message?s=Hello&user=jpolitz
+9. Field: ```String parts```. Value = ```Hello&user=jpolitz```
+10. Field: ```String message```. Value = ```Hello```
+11. Field: ```String user```. Value = ```jpolitz```
+13. Field: ```String old```. Value = ```jpolitz: Hello```
+14. Class field: ```String result```. Value = ```jpolitz: Hello```. 
 From this specific request, the url changes based on the given argument. Consequently, the all of the fields and the class field also change.
 
 *Screenshot 2*
@@ -66,15 +66,14 @@ Methods called, relevate arguments and relevant fields of the class, and how do 
 3. Method: ```getPath()```. Parameter: url. Argument: none.
 4. Method: ```equals()```. Parameter: Object. Argument: ```"/add-message"```.
 5. Method: ```startWith()```. Parameter: String. Argument: ```"s="```. 
-6. Method: ```split()```. Parameter: String. Arugment: ```"="```, ```"="```. 
+6. Method: ```split()```. Parameter: String. Arugment: ```"="```, ```"&"```, ```"="```. 
 7. Method: ```Stringformat()```. Parameter: String. Argument ```"%s\n", result```.
-8. Field: String query = http://localhost:4009/add-message?s=How%20are%20you&user=yash
-9. Field: String parts = ```How%20are%20you&user=yash```
-10. Field: String message = ```How are you```
-11. Field: String user = ```yash```
-12. 13. Field: ```String old``` = ```yash: How are you```
-13. Class field: ```String result```. Value = ```jpolitz: Hello
-                                                yash: How are you```
+8. Field: ```String query``` = http://localhost:4009/add-message?s=How%20are%20you&user=yash
+9. Field: ```String parts```. Value = ```How%20are%20you&user=yash```
+10. Field: ```String message```. Value = ```How are you```
+11. Field: ```String user```. Value = ```yash```
+12. 13. Field: ```String old``. Value = ```yash: How are you```
+13. Class field: ```String result```. Value = ```jpolitz: Hello``` \n ```yash: How are you```
 From this specific request, the url changes based on the given argument. Consequently, all of the relevant fields and the class field also change. 
 
 ## Part 2
