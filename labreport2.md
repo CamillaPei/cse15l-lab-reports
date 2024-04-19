@@ -49,11 +49,12 @@ Methods called, relevate arguments and relevant fields of the class, and how do 
 5. Method: ```startWith()```. Parameter: String. Argument: ```"s="```. 
 6. Method: ```split()```. Parameter: String. Arugment: ```"="```, ```"="```. 
 7. Method: ```Stringformat()```. Parameter: String. Argument ```"%s\n", result```.
-8. Field: String query = http://localhost:4009/add-message?s=Hello&user=jpolitz
-9. Field: String parts = ```Hello&user=jpolitz```
-10. Field: String message = ```Hello```
-11. Field: String user = ```jpolitz```
-12. Class field: ```String result```. Value = ```jpolitz: Hello```. 
+8. Field: ```String query``` = http://localhost:4009/add-message?s=Hello&user=jpolitz
+9. Field: ```String parts``` = ```Hello&user=jpolitz```
+10. Field: ```String message``` = ```Hello```
+11. Field: ```String user``` = ```jpolitz```
+13. Field: ```String old``` = ```jpolitz: Hello```
+14. Class field: ```String result``` = ```jpolitz: Hello```. 
 From this specific request, the url changes based on the given argument. Consequently, the all of the fields and the class field also change.
 
 *Screenshot 2*
@@ -71,7 +72,9 @@ Methods called, relevate arguments and relevant fields of the class, and how do 
 9. Field: String parts = ```How%20are%20you&user=yash```
 10. Field: String message = ```How are you```
 11. Field: String user = ```yash```
-12. Class field: ```String result```. Value = ```jpolitz: Hello" Hello \n yash: How are you```
+12. 13. Field: ```String old``` = ```yash: How are you```
+13. Class field: ```String result```. Value = ```jpolitz: Hello
+                                                yash: How are you```
 From this specific request, the url changes based on the given argument. Consequently, all of the relevant fields and the class field also change. 
 
 ## Part 2
