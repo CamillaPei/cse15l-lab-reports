@@ -42,39 +42,39 @@ using ```/add-message```
 ![SCREENSHOT1](labreport2screenshot1.jpg)
 
 Methods called, relevate arguments and relevant fields of the class, and how do values of any relevant fields of the class change from this specific request: 
-1. Method: ```handleRequest```. Parameter: ```URI url```. Argument: http://localhost:4009/add-message?s=Hello&user=jpolitz
+1. Method: ```handleRequest```. Parameter: ```URI url```. Argument: ```http://localhost:4009/add-message?s=Hello&user=jpolitz```
 2. Method: ```getQuery()```. Parameter: url. Argument: none.
 3. Method: ```getPath()```. Parameter: url. Argument: none.
 4. Method: ```equals()```. Parameter: Object. Argument: ```"/add-message"```.
 5. Method: ```startWith()```. Parameter: String. Argument: ```"s="```. 
 6. Method: ```split()```. Parameter: String. Arugment: ```"="```, ```"&"```, ```"="```.
 7. Method: ```Stringformat()```. Parameter: String. Argument ```"%s\n", result```.
-8. Field: ```String query```. Value = http://localhost:4009/add-message?s=Hello&user=jpolitz
+8. Field: ```String query```. Value = ```http://localhost:4009/add-message?s=Hello&user=jpolitz```
 9. Field: ```String parts```. Value = ```Hello&user=jpolitz```
 10. Field: ```String message```. Value = ```Hello```
 11. Field: ```String user```. Value = ```jpolitz```
 13. Field: ```String old```. Value = ```jpolitz: Hello```
 14. Class field: ```String result```. Value = ```jpolitz: Hello```. 
-From this specific request, the url changes based on the given argument. Consequently, the all of the fields and the class field also change.
+From this specific request, the url changes based on the given argument. Consequently, the all of the fields and the class field also change to the corresponding values.
 
 *Screenshot 2*
 ![SCREENSHOT2](labreport2screenshot2.jpg)
 
 Methods called, relevate arguments and relevant fields of the class, and how do values of any relevant fields of the class change from this specific request: 
-1. Method: ```handleRequest```. Parameter: ```URI url```. Argument: http://localhost:4009/add-message?s=How%20are%20you&user=yash
+1. Method: ```handleRequest```. Parameter: ```URI url```. Argument: ```http://localhost:4009/add-message?s=How%20are%20you&user=yash```
 2. Method: ```getQuery()```. Parameter: url. Argument: none.
 3. Method: ```getPath()```. Parameter: url. Argument: none.
 4. Method: ```equals()```. Parameter: Object. Argument: ```"/add-message"```.
 5. Method: ```startWith()```. Parameter: String. Argument: ```"s="```. 
 6. Method: ```split()```. Parameter: String. Arugment: ```"="```, ```"&"```, ```"="```. 
 7. Method: ```Stringformat()```. Parameter: String. Argument ```"%s\n", result```.
-8. Field: ```String query``` = http://localhost:4009/add-message?s=How%20are%20you&user=yash
+8. Field: ```String query``` = ```http://localhost:4009/add-message?s=How%20are%20you&user=yash```
 9. Field: ```String parts```. Value = ```How%20are%20you&user=yash```
 10. Field: ```String message```. Value = ```How are you```
 11. Field: ```String user```. Value = ```yash```
-12. 13. Field: ```String old``. Value = ```yash: How are you```
-13. Class field: ```String result```. Value = ```jpolitz: Hello``` \n ```yash: How are you```
-From this specific request, the url changes based on the given argument. Consequently, all of the relevant fields and the class field also change. 
+12. Field: ```String old```. Value = ```yash: How are you```
+13. Class field: ```String result```. Value = ```jpolitz: Hello \n yash: How are you```
+From this specific request, the url changes based on the given argument. Consequently, all of the relevant fields and the class field also change to the corresponding values. 
 
 ## Part 2
 run ```ls``` with the absolute path to the private key for SSH key for logging into ```ieng6```
