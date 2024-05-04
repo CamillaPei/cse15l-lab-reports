@@ -1,5 +1,5 @@
 # Part 1 Bugs 
-1. Failure-incuding input: 
+1. Failure-inducing input: 
 ```
 @Test
   public void testReversedwError() {
@@ -43,7 +43,7 @@ static int[] reversed(int[] arr) {
 5. Explanation
    
 By changing `arr[i] = newArray[arr.length - i - 1]` to `newArray[i] = arr[arr.length - i - 1]` and changing `return arr` to `return newArray`,
-the error is fixed by irritating through `arr` and putting elements into `newArray` in reversed order, then return `newArray`.
+the code now is irritating through `arr` and putting elements into `newArray` in reversed order, then return `newArray`.
 Previously, the code was irritating through `newArray` (whihc is empty) and putting elements into `arr`, and returning `arr` at the end, which is logically incorrect.
 This error also explains why the code doesn't produce any error when `arr` is empty.     
    
@@ -62,7 +62,7 @@ Example 1:
           cardiovascular disease (prevalent heart disease,
         CHS Cardiovascular Health Study
 ```
-In this example, `grep -i ` searches for the word "cardiovascular" in the given file while ignoring the case of the letters. This command is useful for finding occurances of a specific word in a file without concerns about the case of the letter. 
+In this example, `grep -i ` searches and displays lines what contain the word "cardiovascular" in the given file while ignoring the case of the letters. This command is useful for finding occurances of a specific word in a file without concerns about the case of the letter. 
 
 Example 2:
 ```
@@ -81,7 +81,7 @@ CamillasMacbook:docsearch CosmoNil$ grep -i "complex" technical/plos/journal.pbi
         actinomycin D and DRB to cells, the large complex is converted to the small complex to
         complexes play in the transcription of specific genes? How central will the regulation of
 ```
-In this example, `grep -i ` searches for lines that includes "complex" in the given file while ignoring the case of letters, and I noticed that the plural form of "complex" is also included in the result. This flexibility accommodates variations in case and pluralization, making the search more inclusive. 
+In this example, `grep -i ` searches and displays the lines that includes "complex" in the given file while ignoring the case of letters, and I noticed that the plural form of "complex" is also included in the result. This flexibility accommodates variations in case and pluralization, making the search more inclusive. 
 
 2. `grep -l ` Displays list of filenames only.
 
@@ -455,7 +455,7 @@ technical/biomed/rr191.txt
 technical/biomed/rr196.txt
 technical/biomed/rr74.txt
 ```
-In this case, `grep -l ` searches and displays the name of the files that contain the word "RNA" in `biomed` folder. By only displaying the filenames instead of matchign lines, `grep -l `mimnimizes the output displayed. 
+In this case, `grep -l ` searches and displays the names (and path) of files that contain the word "RNA" in `biomed` folder. By only displaying the filenames instead of matching lines, `grep -l `mimnimizes the output displayed. 
 
 Exmaple 2:
 ```
@@ -481,7 +481,7 @@ technical/plos/pmed.0020187.txt
 technical/plos/pmed.0020209.txt
 technical/plos/pmed.0020246.txt
 ```
-Similarly, in this example, `grep -l ` searches and displays the name of the files that contain the word "medication" in `plos` folder. Again, the amount output is minimized by printing only the file names. 
+Similarly, in this example, `grep -l ` searches and displays the name (and path) of the files that contain the word "medication" in `plos` folder. Again, the amount of output is minimized by printing only the file names. 
 
 3. `grep -o ` Print only the matched parts of a matchingn line, with each such part on a separate output line. 
    
