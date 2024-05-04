@@ -47,3 +47,12 @@ the error is fixed by irritating through `arr` and putting elements into `newArr
 Previously, the code was irritating through `newArray` (whihc is empty) and putting elements into `arr`, and returning `arr` at the end, which is logically incorrect.
 This error also explains why the code doesn't produce any error when `arr` is empty.     
    
+# Part 2 Researching Command 
+`grep` 
+
+I goggled "grep command line options", and found a website with a list of `grep` command. [source link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) 
+1. `grep -c ` Prints only a count of the lines that match a pattern.
+2. `grep -h ` Display the matched lines, but do not display the filenames.
+3. `grep -i ` Ignores, case for matching.
+4. `grep -l ` Display list of filenames only.
+
