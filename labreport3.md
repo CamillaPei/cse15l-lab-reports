@@ -1,4 +1,5 @@
-# Part 1 Bugs 
+# Lab Report 3 - Bugs and Commands 
+## Part 1 Bugs 
 1. Failure-inducing input: 
 ```
 @Test
@@ -47,7 +48,7 @@ the code now is irritating through `arr` and putting elements into `newArray` in
 Previously, the code was irritating through `newArray` (whihc is empty) and putting elements into `arr`, and returning `arr` at the end, which is logically incorrect.
 This error also explains why the code doesn't produce any error when `arr` is empty.     
    
-# Part 2 Researching Command 
+## Part 2 Researching Command 
 `grep` 
 
 I goggled "grep command line options", and found a website with a list of `grep` command. [source link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) 
