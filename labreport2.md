@@ -81,7 +81,7 @@ run ```ls``` with the absolute path to the private key for SSH key for logging i
 ![PRIVATE](labreport2privatekey.jpg)
 
 run ```ls``` with the absolute path to the public key for SSH key for logging into ```ieng6```
-![PUBLIC](labreport2publickey.jpg)
+![PUBLIC](pubkey.jpg)
 
 log into ```ieng6``` without being asked for a password
 ![NOPASSWORD](labreport2nopassword.jpg)
