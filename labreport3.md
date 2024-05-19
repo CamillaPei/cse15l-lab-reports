@@ -11,7 +11,7 @@
 This input would give an error because `reversed` is iterating through `newArray` 
 (which is empty) and putting element into `arr`, and returning `arr`. As a result,
 the output of `ArrayExamples.reversed(input1)` will be an empty array. This is 
-incosistent with the expected output (`input1`), which creates an error. 
+inconsistent with the expected output（`int []{3,2,1}`), so it creates an error. 
 
 2. Input that doesn't induce a failure:
 ```
@@ -21,8 +21,7 @@ incosistent with the expected output (`input1`), which creates an error.
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
 ```
-As previously stated, the output of `ArrayExamples.reversed(input1)` will be an empty array. This is consistent with the expected output (`input1`), therefore doesn't cause 
-an error. 
+As previously stated, the output of `ArrayExamples.reversed(input1)` will be an empty array. This is consistent with the expected output, which is also an empty array, therefore it doesn't cause an error. 
 
 3. Symptom: 
 ![SYMPTOM](labreport3symptom.jpg) 
@@ -59,7 +58,7 @@ This error also explains why the code doesn't produce any error when `arr` is em
 ## Part 2 Researching Command 
 `grep` 
 
-I goggled "grep command line options", and found a website with a list of `grep` command. [source link](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) 
+I goggled "grep command line options", and found a website with a list of `grep` command. [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) 
 1. `grep -i ` Ignores, case for mathing.
 
 Example 1:
