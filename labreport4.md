@@ -4,7 +4,7 @@
 I connected to remote SSH No specific commands used, using clicking with mouse. 
 
 ## step 5: clone fork 
-![STEP5](step5.jpg)
+![STEP5](lab4step5.jpg)
 Keys pressed: `git clone <command> <v> <enter>`
 
 I copied the link of fork of the repository from my Github account using the `ssh` URL, so I used `git clone` and pasted the link to my terminal. 
