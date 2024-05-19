@@ -44,8 +44,8 @@ static int[] reversed(int[] arr) {
 5. Explanation
    
 By changing `arr[i] = newArray[arr.length - i - 1]` to `newArray[i] = arr[arr.length - i - 1]` and changing `return arr` to `return newArray`,
-the code now is irritating through `arr` and putting elements into `newArray` in reversed order, then return `newArray`.
-Previously, the code was irritating through `newArray` (whihc is empty) and putting elements into `arr`, and returning `arr` at the end, which is logically incorrect.
+the code now is iterating through `arr` and putting elements into `newArray` in reversed order, then return `newArray`.
+Previously, the code was iterating through `newArray` (whihc is empty) and putting elements into `arr`, and returning `arr` at the end, which is logically incorrect.
 This error also explains why the code doesn't produce any error when `arr` is empty.     
    
 ## Part 2 Researching Command 
