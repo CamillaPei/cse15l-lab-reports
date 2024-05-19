@@ -17,9 +17,9 @@ I used cd to change the current wokring directory to `lab7`, then run the tests 
 The code has an error in `ListExamples`. 
 
 ## step 7: edit the code
-![STEP7pic1]()
-![STEP7pic2]()
-![STEP7pic3]()
+![STEP7pic1](lab4step7a.jpg)
+![STEP7pic2](lab4step7b.jpg)
+![STEP7pic3](lab4step7c.jpg)
 
 Keys pressed: `vim ListExamples.java <enter>`, `x`, `i 2 <esc>`, `: wq <enter>`
 I used `vim ListExamples.java` to open the the file in vim. I found the line where the error is, and used `x` command to delete `1`. I used `i` command to enter insert mode, and pressed `2`. I used `<esc>` to exit insert mode, and used `: wq` to save and exit the file. 
