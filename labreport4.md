@@ -33,8 +33,10 @@ Keys pressed: `bash test.sh <enter>`
 I used `bash test.sh` to run the test again, and no errors are shown. 
 
 ## step 9: commit and push 
-![STEP9]()
+![STEP9](lab4step9.jpg)
 
-Keys pressed: 
+Keys pressed: 'git add ListExamples.java <enter>`, `git commit -m "Debug ListExamples.java" <enter>`
 
+I used `git add` to stage the changes I made to `ListExamples.java`, then I used `git commit -m` to commit 
+and specify a commit message inline. In this case, the message is `"Debug Listexamples.java"`. 
 
