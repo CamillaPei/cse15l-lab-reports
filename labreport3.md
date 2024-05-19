@@ -8,6 +8,11 @@
     assertArrayEquals(new int[]{3,2,1}, ArrayExamples.reversed(input1));
   }
 ```
+This input would give an error because `reversed` is iterating through `newArray` 
+(which is empty) and putting element into `arr`, and returning `arr`. As a result,
+the output of `ArrayExamples.reversed(input1)` will be an empty array. This is 
+incosistent with the expected output (`input1`), which creates an error. 
+
 2. Input that doesn't induce a failure:
 ```
 @Test
@@ -16,6 +21,9 @@
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
 ```
+As previously stated, the output of `ArrayExamples.reversed(input1)` will be an empty array. This is consistent with the expected output (`input1`), therefore doesn't cause 
+an error. 
+
 3. Symptom: 
 ![SYMPTOM](labreport3symptom.jpg) 
 4. Bug:
@@ -45,7 +53,7 @@ static int[] reversed(int[] arr) {
    
 By changing `arr[i] = newArray[arr.length - i - 1]` to `newArray[i] = arr[arr.length - i - 1]` and changing `return arr` to `return newArray`,
 the code now is iterating through `arr` and putting elements into `newArray` in reversed order, then return `newArray`.
-Previously, the code was iterating through `newArray` (whihc is empty) and putting elements into `arr`, and returning `arr` at the end, which is logically incorrect.
+Previously, the code was iterating through `newArray` (which is empty) and putting elements into `arr`, and returning `arr` at the end, which is logically incorrect.
 This error also explains why the code doesn't produce any error when `arr` is empty.     
    
 ## Part 2 Researching Command 
