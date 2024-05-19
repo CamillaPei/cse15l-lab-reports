@@ -11,7 +11,7 @@
 This input would give an error because `reversed` is iterating through `newArray` 
 (which is empty) and putting element into `arr`, and returning `arr`. As a result,
 the output of `ArrayExamples.reversed(input1)` will be an empty array. This is 
-inconsistent with the expected output（`int []{3,2,1}`), so it creates an error. 
+inconsistent with the expected output (`int []{3,2,1}`), so it creates an error. 
 
 2. Input that doesn't induce a failure:
 ```
