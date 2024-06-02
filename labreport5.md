@@ -1,7 +1,7 @@
 note: code was taken from week 7 lab. 
 # Part 1 Debugging Scenario
 
-### Original Post from Student:
+### 1. Original Post from Student:
 
 Title: Help! My Bash script isn't running my Java program correctly.
 
@@ -244,7 +244,13 @@ static List<String> merge(List<String> list1, List<String> list2) {
     }
     return result;
 }
-Part 2 – Reflection
+### 4 All the information 
+File & directory structure needed: 
+
+The contents of each file before fixing the bug: 
+the full command lines I ran to trigger the bug: 
+A description of what to edit to fix the bug: 
+# Part 2 – Reflection
 
 In the second half of this quarter, I learned about the importance of carefully reviewing code logic and how subtle mistakes, like an incorrect index variable, can lead to significant issues. This experience has made me more diligent in debugging and understanding the flow of my programs.
 
