@@ -1,17 +1,19 @@
 note: code was taken from week 7 lab. 
-### Part 1 Debugging Scenario
-## Original Post from Student:
+# Part 1 Debugging Scenario
+
+### Original Post from Student:
 
 Title: Help! My Bash script isn't running my Java program correctly.
 
+
 Post:
-Hi everyone,
+Hi,
 
 I'm having trouble with my Bash script that's supposed to compile and run my Java program. 
 The script runs without errors, but my Java program doesn't seem to produce the expected output. 
 Here is a screenshot of my terminal:
 
-screenshot
+![alt text](lab4step6.jpg)screenshot
 
 I think the issue might be with how the merge function is handling the input lists. 
 My Java program merges two sorted lists, but the result seems incorrect. Any ideas on what might be wrong?
@@ -54,6 +56,7 @@ static List<String> merge(List<String> list1, List<String> list2) {
 }
 
 Any hints would be appreciate!
+tags: lab 7
 
 Response from TA:
 
