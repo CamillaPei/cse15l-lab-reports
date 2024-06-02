@@ -13,7 +13,7 @@ I'm having trouble with my Bash script that's supposed to compile and run my Jav
 The script runs without errors, but my Java program doesn't seem to produce the expected output. 
 Here is a screenshot of my terminal:
 
-![alt text](lab5pic1.jpg)screenshot
+![SCREENSHOT](lab5pic1.jpg)
 
 I think the issue might be with how the merge function is handling the input lists. 
 My Java program merges two sorted lists, but the result seems incorrect. Any ideas on what might be wrong?
