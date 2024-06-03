@@ -188,13 +188,13 @@ Now all of my tests passed!
 
 ![SCREENSHOT](lab5corrected.jpg)
 
-Thanks for the help!
+Thanks for your help!
 
-### 4. All the information 
-File & directory structure needed: 
+## 4. All the information 
+### File & directory structure needed: 
 ![PIC](lab5file&dc.jpg)
 
-The contents of each file before fixing the bug: 
+### The contents of each file before fixing the bug: 
 
 `.gitignore`:
 ```
@@ -296,11 +296,11 @@ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
 ```
 
-the full command line I ran to trigger the bug: 
+### the full command line I ran to trigger the bug: 
 `bash test.sh`
 
-A description of what to edit to fix the bug: 
-To fix the bugs, update the index increment in the last while loop of the merge method from `index1` to `index2` so that the code correctly appends elements to list2 instead of resulting in infinite loop. In filter method, change `result.add(0, s)` to `result.add(s)` so that the elemenets are added to the list in correct order. 
+### A description of what to edit to fix the bug: 
+To fix the bugs, update the index increment in the last while loop of the `merge` method from `index1` to `index2` so that the code correctly appends elements to the new list and updating the index number instead of resulting in infinite loop and `time out` error. In `filter method`, change `result.add(0, s)` to `result.add(s)` so that the elemenets are added to the list in correct order. 
 Fixed code: 
 ```
 import java.util.ArrayList;
@@ -345,6 +345,8 @@ class ListExamples {
 }
 
 ```
+
+The codes in all other files were unchanged. 
 
 # Part 2 – Reflection
 
