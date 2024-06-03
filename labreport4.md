@@ -33,7 +33,7 @@ I used `vim ListExamples.java` to open the the file in vim. I moved my cursor to
 
 Keys pressed: `bash <space> test.sh <enter>` 
 
-I used `bash test.sh` to run the test again, and no errors are shown. 
+I used `bash test.sh` to run the test again, and no errors were shown. 
 
 ## step 9: commit and push 
 ![STEP9](lab4_step9new.jpg)
