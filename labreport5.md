@@ -9,11 +9,11 @@ Post:
 Hi,
 
 I'm having trouble with my Bash script that's supposed to compile and run my Java program. 
-The script ran without errors, but my there were two failures in `ListExampleTests`. 
+The script ran without errors, but there were two failures in `ListExampleTests`. 
 Here is a screenshot of my terminal:
 ![SCREENSHOT](lab5_bashresult.jpg)
 
-Based on what I saw in my terminal, there were two failures in `ListExamplesTests`. The first one was in `testFilter` where the actual output was inconsistent with the expected output, specifically, the actual output was the revsered order of expected output. The second one was in `testMerge2` that resulted a `test timed out` error. The other 3 tests in `ListExamplesTests` passed. 
+Based on what I saw in my terminal, there were two failures in `ListExamplesTests`. The first one was in `testFilter` where the actual output was inconsistent with the expected output. The second one was in `testMerge2` that resulted a `test timed out` error. The other 3 tests in `ListExamplesTests` passed. 
 
 I check my code, and I think that the failure-inducing input were in `merge` and `filter` method. There might be something wrong with how the `merge` method were handling the input lists and how the `filter` method was appending the list.
 
