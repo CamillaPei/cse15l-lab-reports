@@ -180,22 +180,14 @@ while(index2 < list2.size()) {
     }
 ```
 Now all of my tests passed
+
 ![SCREENSHOT](lab5corrected.jpg)
 
 Thanks for the help!
 
 ### 4. All the information 
 File & directory structure needed: 
-```
-/project
-    |-- ListExamples.java
-    |-- ListExamplesTests.java
-    |-- test.sh
-    |-- lib/
-        |-- hamcrest-core-1.3.jar
-        |-- junit-4.13.2.jar
-![alt text](image.jpg)
-```
+![PIC](lab5file&dc.jpg)
 
 The contents of each file before fixing the bug: 
 
@@ -353,7 +345,8 @@ class ListExamples {
 
 # Part 2 – Reflection
 
-In the second half of this quarter, I learned about the importance of carefully reviewing code logic and how subtle mistakes, like an incorrect index variable, can lead to significant issues. This experience has made me more diligent in debugging and understanding the flow of my programs.
+In the second half of this quarter, I learned a lot of useful techniques. For example, I learned about how to use vim when I don't have access of the file folders. I also learned how to use `jdb`, the Java Debugger, to debug efficiently. 
+
 
 
 
