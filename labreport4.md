@@ -1,12 +1,12 @@
 # Lab Report 4 Vim 
 ## step 4: Log into ieng6
-![STEP4](lab4_step4new.jpg)
+![STEP4](lab4_step4.jpg)
 Keys pressed: `ssh <space> xpei@ieng6.ucsd.edu <enter>`
 
 I connected to remote SSH by using `ssh` and typing my username. 
 
 ## step 5: clone fork 
-![STEP5](lab4step5.jpg)
+![STEP5](lab4step4new.jpg)
 Keys pressed: `git <space> clone <space> <command> <v> <enter>`
 
 To clone my fork of the repository from my Github account using `ssh` url, I used `git clone` and pasted the link to my terminal. 
