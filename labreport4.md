@@ -36,7 +36,7 @@ Keys pressed: `bash <space> test.sh <enter>`
 I used `bash test.sh` to run the test again, and no errors are shown. 
 
 ## step 9: commit and push 
-![STEP9](lab4step9.jpg)
+![STEP9](lab4_step9.jpg)
 
 Keys pressed: 'git <space> add <space> ListExamples.java <enter>`, `git <space> commit <space> -m <space> "Debug <space> ListExamples.java" <enter>`, `git <space> push <enter>`
 
