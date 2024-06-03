@@ -11,7 +11,7 @@ Hi,
 I'm having trouble with my Bash script that's supposed to compile and run my Java program. 
 The script ran without errors, but there were two failures in `ListExampleTests`. 
 Here is a screenshot of my terminal:
-![SCREENSHOT](lab5_bashresult.jpg)
+![SCREENSHOT](lab5_newbash.jpg)
 
 Based on what I saw in my terminal, there were two failures in `ListExamplesTests`. The first one was in `testFilter` where the actual output was inconsistent with the expected output. The second one was in `testMerge2` that resulted a `test timed out` error. The other 3 tests in `ListExamplesTests` passed. 
 
@@ -91,26 +91,26 @@ public class ListExamplesTests {
 		assertArrayEquals(new String[]{ "a", "b", "c", "c", "d", "e" }, ListExamples.merge(l1, l2).toArray());
         }
 
- @Test
-  public void testFilter() {
-    List<String> list = Arrays.asList("apple", "banana", "cherry", "date", "fig", "grape");
-    List<String> result = ListExamples.filter(list, s -> s.contains("a"));
-    assertEquals(Arrays.asList("apple", "banana", "date", "grape"), result);
-  }
+ 	@Test
+  	public void testFilter() {
+    		List<String> list = Arrays.asList("apple", "banana", "cherry", "date", "fig", "grape");
+ 		List<String> result = ListExamples.filter(list, s -> s.contains("a"));
+    		assertEquals(Arrays.asList("apple", "banana", "date", "grape"), result);
+  	}
 
-  @Test
-  public void testFilterEmptyList() {
-    List<String> list = Arrays.asList();
-    List<String> result = ListExamples.filter(list, s -> s.contains("a"));
-    assertEquals(Arrays.asList(), result);
-  }
+  	@Test
+  	public void testFilterEmptyList() {
+    		List<String> list = Arrays.asList();
+    		List<String> result = ListExamples.filter(list, s -> s.contains("a"));
+    		assertEquals(Arrays.asList(), result);
+	}
 
-  @Test
-  public void testFilterNoMatch() {
-    List<String> list = Arrays.asList("blueberry", "kiwi", "mango");
-    List<String> result = ListExamples.filter(list, s -> s.contains("z"));
-    assertEquals(Arrays.asList(), result);
-  }
+	@Test
+  	public void testFilterNoMatch() {
+    		List<String> list = Arrays.asList("blueberry", "kiwi", "mango");
+    		List<String> result = ListExamples.filter(list, s -> s.contains("z"));
+    		assertEquals(Arrays.asList(), result);
+  	}
 }
 ```
 
@@ -127,24 +127,24 @@ Let's focus on the specific method you're having trouble with. Firstly, the if s
 ```
 if(sc.checkString(s)) {
         result.add(0, s);
-      }
+}
 ```
-Think about what does `add(int index, E element)` do to an array list. Is that the right order you want to add elements to the list? 
+By comparing the expected output and your actually output, what do you see? Think about what `add(int index, E element)` do to an array list. Is that the right order you want to add elements to the list? 
 
 Secondly, in your `merge` method, you have: 
 ```
 while(index1 < list1.size()) {
       result.add(list1.get(index1));
       index1 += 1;
-    }
+}
 while(index2 < list2.size()) {
 	result.add(list2.get(index2));
       index1 += 1;
-    }
+}
 ```
 Your first while loop is perfectly fine. Could you compare the second while loop to the first one? What should you increment in your second while loop? 
 
-I hope these are helpful and let me know if you have any questions. 
+I hope these are helpful and let me know if you have any questions!
 
 ### 3. Student's Follow-up Post: 
 Title: Update
@@ -158,13 +158,16 @@ if(sc.checkString(s)) {
     result.add(0, s); 
 }
 ```
-This line was adding elements at the zeroth index of the list, resulting a reversed order. I changed it to:
+`result.add(0, s)` was adding element s at the zeroth index of the list, thus resulting a reversed order. This bug was lead to inconsistent output with the expected output. 
+I changed it to:
 
 ```
 if(sc.checkString(s)) {
     result.add(s);  
 }
 ```
+Now element s are being added in order. 
+
 My second bug was in the `merge` method: 
 ```
 while(index2 < list2.size()) {
@@ -172,14 +175,16 @@ while(index2 < list2.size()) {
       index1 += 1;
     }
 ```
-I was incrementing `index1` when I was supposed to increment `index2`. This mistake results an infinite loop since the value of `index2` was never incremented and therefore would be less than `list2.size()` as long as `list2` is not empty. I changed the code to:
+I was incrementing `index1` when I was supposed to increment `index2`. This mistake results an infinite loop since the value of `index2` was never incremented and therefore would be less than `list2.size()` as long as `list2` is not empty. This bug was causing the `test timed out` error. I changed the code to:
 ```
 while(index2 < list2.size()) {
 	result.add(list2.get(index2));
       index2 += 1;
     }
 ```
-Now all of my tests passed
+Now `index2` is being incremented as elements are added to `result`. 
+
+Now all of my tests passed!
 
 ![SCREENSHOT](lab5corrected.jpg)
 
@@ -262,28 +267,26 @@ public class ListExamplesTests {
 		assertArrayEquals(new String[]{ "a", "b", "c", "c", "d", "e" }, ListExamples.merge(l1, l2).toArray());
         }
 
- @Test
-  public void testFilter() {
-    List<String> list = Arrays.asList("apple", "banana", "cherry", "date", "fig", "grape");
-    List<String> result = ListExamples.filter(list, s -> s.contains("a"));
-    assertEquals(Arrays.asList("apple", "banana", "date", "grape"), result);
-  }
+ 	@Test
+  	public void testFilter() {
+ 		List<String> list = Arrays.asList("apple", "banana", "cherry", "date", "fig", "grape");
+    		List<String> result = ListExamples.filter(list, s -> s.contains("a"));
+    		assertEquals(Arrays.asList("apple", "banana", "date", "grape"), result);
+  	}
 
-  @Test
-  public void testFilterEmptyList() {
-    List<String> list = Arrays.asList();
-    List<String> result = ListExamples.filter(list, s -> s.contains("a"));
-    assertEquals(Arrays.asList(), result);
-  }
+  	@Test
+  	public void testFilterEmptyList() {
+    		List<String> list = Arrays.asList();
+    		List<String> result = ListExamples.filter(list, s -> s.contains("a"));
+    		assertEquals(Arrays.asList(), result);
+  	}
 
-  @Test
-  public void testFilterNoMatch() {
-    List<String> list = Arrays.asList("blueberry", "kiwi", "mango");
-    List<String> result = ListExamples.filter(list, s -> s.contains("z"));
-    assertEquals(Arrays.asList(), result);
-  }
-}
-
+  	@Test
+  	public void testFilterNoMatch() {
+    		List<String> list = Arrays.asList("blueberry", "kiwi", "mango");
+    		List<String> result = ListExamples.filter(list, s -> s.contains("z"));
+    		assertEquals(Arrays.asList(), result);
+  	}
 }
 ```
 
