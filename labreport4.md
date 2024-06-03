@@ -1,21 +1,21 @@
 # Lab Report 4 Vim 
 ## step 4: Log into ieng6
 ![STEP4](lab4_step4.jpg)
-Keys pressed: `ssh <space> xpei@ieng6.ucsd.edu <enter>
+Keys pressed: `ssh <space> xpei@ieng6.ucsd.edu <enter>`
 
 I connected to remote SSH by using `ssh` and typing my username. 
 
 ## step 5: clone fork 
 ![STEP5](lab4step5.jpg)
-Keys pressed: `git clone <command> <v> <enter>`
+Keys pressed: `git <space> clone <space> <command> <v> <enter>`
 
-I copied the link of fork of the repository from my Github account using the `ssh` URL, so I used `git clone` and pasted the link to my terminal. 
+To clone my fork of the repository from my Github account using `ssh` url, I used `git clone` and pasted the link to my terminal. 
 
 ## step 6: run the tests, demonstrating that they fail 
 ![STEP6](lab4step6.jpg)
-Keys pressed: `cd lab7 <enter>`, `bash test.sh <enter>`
+Keys pressed: `cd <space> lab7 <enter>`, `bash <space> test.sh <enter>`
 
-I used cd to change the current wokring directory to `lab7`, then run the tests by using command `bash test.sh`. 
+I used `cd` to change the current wokring directory to `lab7`, then run the tests by using command `bash test.sh`. 
 The code has an error in `ListExamples`. 
 
 ## step 7: edit the code
@@ -23,21 +23,22 @@ The code has an error in `ListExamples`.
 ![STEP7pic2](lab4step7b.jpg)
 ![STEP7pic3](lab4step7c.jpg)
 
-Keys pressed: `vim ListExamples.java <enter>`, `x`, `i2 <esc>`, `: wq <enter>`
+Keys pressed: `vim <space> ListExamples.java <enter>`,
+I pressed <down> 43 times, then <right> 12 times, `x`, `i2 <esc>`, `:wq <enter>`
 
 I used `vim ListExamples.java` to open the the file in vim. I moved my cursor to the place where the error is, and used `x` command to delete `1`. I used `i` command to enter insert mode, and pressed `2` to fix the error in that line. Then, I used `<esc>` to exit insert mode, and used `: wq` to save and exit the file. 
 
 ## step 8: run the tests 
 ![STEP8](lab4step8.jpg)
 
-Keys pressed: `bash test.sh <enter>` 
+Keys pressed: `bash <space> test.sh <enter>` 
 
 I used `bash test.sh` to run the test again, and no errors are shown. 
 
 ## step 9: commit and push 
 ![STEP9](lab4step9.jpg)
 
-Keys pressed: 'git add ListExamples.java <enter>`, `git commit -m "Debug ListExamples.java" <enter>`
+Keys pressed: 'git <space> add <space> ListExamples.java <enter>`, `git <space> commit <space> -m <space> "Debug <space> ListExamples.java" <enter>`, `git <space> push <enter>`
 
 I used `git add` to stage the changes I made to `ListExamples.java`, then I used `git commit -m` to commit and specify a commit message inline. In this case, the message is `"Debug Listexamples.java"`. 
 
