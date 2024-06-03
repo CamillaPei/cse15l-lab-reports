@@ -39,8 +39,8 @@ I used `bash test.sh` to run the test again, and no errors were shown.
 ![STEP9A](lab4_step9a.jpg)
 ![STEP9](lab4_step9new.jpg)
 
-Keys pressed: 'git <space> add <space> ListExamples.java <enter>`, `git <space> commit <space> -m <space> "Debug <space> ListExamples.java" <enter>`, `git <space> push <enter>`
+Keys pressed: `git <space> add <space> ListExamples.java <enter>`, `git <space> commit <space> -m <space> "Debug <space> ListExamples.java" <enter>`, `git <space> push <enter>`
 
 I used `git add` to stage the changes I made to `ListExamples.java`, then I used `git commit -m` to commit and specify a commit message. 
-In this case, the message is `"Debug Listexamples.java"`. Lastly, I used `git push` to push to upload local repository content to a remote repository. 
+In this case, the message is `"Debug Listexamples.java"`. Lastly, I used `git push` to push to upload local repository content to a remote repository, and it was successful. 
 
