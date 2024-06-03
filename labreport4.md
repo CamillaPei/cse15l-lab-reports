@@ -1,8 +1,8 @@
 # Lab Report 4 Vim 
 ## step 4: Log into ieng6
-![STEP4](lab4step4.jpg)
+![STEP4](lab4_step4.jpg)
 Keys pressed: `ssh <space> xpei@ieng6.ucsd.edu <enter>
-I connected to remote SSH No specific commands used. 
+I connected to remote SSH by using `ssh` and typing my username. 
 
 ## step 5: clone fork 
 ![STEP5](lab4step5.jpg)
