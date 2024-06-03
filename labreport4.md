@@ -7,7 +7,7 @@ I connected to remote SSH by using `ssh` and typing my username.
 
 ## step 5: clone fork 
 ![STEP5](lab4_step5new.jpg)
-Keys pressed: `git <space> clone <space> <command> <v> <enter>`
+Keys pressed: `git <space> clone <space> <command> v <enter>`
 
 To clone my fork of the repository from my Github account using `ssh` url, I used `git clone` and pasted the link to my terminal. 
 
