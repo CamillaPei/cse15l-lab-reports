@@ -1,6 +1,6 @@
 # Lab Report 4 Vim 
 ## step 4: Log into ieng6
-![STEP4](lab4_step4.jpg)
+![STEP4](lab4_step4new.jpg)
 Keys pressed: `ssh <space> xpei@ieng6.ucsd.edu <enter>`
 
 I connected to remote SSH by using `ssh` and typing my username. 
@@ -36,7 +36,7 @@ Keys pressed: `bash <space> test.sh <enter>`
 I used `bash test.sh` to run the test again, and no errors are shown. 
 
 ## step 9: commit and push 
-![STEP9](lab4_step9.jpg)
+![STEP9](lab4_step9new.jpg)
 
 Keys pressed: 'git <space> add <space> ListExamples.java <enter>`, `git <space> commit <space> -m <space> "Debug <space> ListExamples.java" <enter>`, `git <space> push <enter>`
 
