@@ -2,6 +2,7 @@
 ## step 4: Log into ieng6
 ![STEP4](lab4_step4.jpg)
 Keys pressed: `ssh <space> xpei@ieng6.ucsd.edu <enter>
+
 I connected to remote SSH by using `ssh` and typing my username. 
 
 ## step 5: clone fork 
