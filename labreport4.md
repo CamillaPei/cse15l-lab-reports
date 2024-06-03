@@ -26,7 +26,7 @@ The code has an error in `ListExamplesTest`.
 Keys pressed: `vim <space> ListExamples.java <enter>`,
 I pressed `<down>` 43 times, then `<right>` 12 times, then `x`, then `i2 <esc>`, then `:wq <enter>`
 
-I used `vim ListExamples.java` to open the the file in vim. I moved my cursor to line 43 using the down arrow, then moved to the place where the error is by pressing right arrow 12 times. Then I used `x` command to delete `1`. I used `i` command to enter insert mode, and pressed `2` to fix the error in that line. Then, I used `<esc>` to exit insert mode, and used `:wq` to save and exit the file. 
+I used `vim ListExamples.java` to open the the file in vim. I moved my cursor to line 43 using the down arrow, then moved to the place where the error is by pressing right arrow 12 times. Then I used `x` command to delete `1`. I used `i` command to enter insert mode, and pressed `2` to insert 2 in that line. Then, I used `<esc>` to exit insert mode, and used `:wq` to save and exit the file. 
 
 ## step 8: run the tests 
 ![STEP8](lab4step8.jpg)
