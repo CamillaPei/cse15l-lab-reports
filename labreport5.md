@@ -302,6 +302,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 *the full command line I ran to trigger the bug:*
 
 `bash test.sh`
+This command produced the failing JUnit test outputs. 
 
 *A description of what to edit to fix the bug:*
 
